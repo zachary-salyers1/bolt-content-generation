@@ -1,7 +1,8 @@
-import { Groq } from '@groq/groq-sdk';
+import { Groq } from 'groq-sdk';
 
 const groq = new Groq({
-  apiKey: import.meta.env.VITE_GROQ_API_KEY
+  apiKey: import.meta.env.VITE_GROQ_API_KEY,
+  dangerouslyAllowBrowser: true
 });
 
 const PLATFORM_SPECS = {
