@@ -10,9 +10,11 @@ export interface ContentRequest {
 export interface GeneratedPost {
   content: string;
   hashtags: string[];
+  selectedHashtags: string[];
   images: {
     url: string;
     alt: string;
+    description: string;
   }[];
   bestTimes: string[];
 }
